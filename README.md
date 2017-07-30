@@ -1,11 +1,28 @@
 # web-traffic-forecast
 This Repo holds the trends data as a csv file for each page,
-right now the repo has
+
 # 0-27 pages google search trends in the folder trends.
 
 # The script used to fetch the trends is in dl_trends,
 
-# clone the repo, enter the dl_trends, 
-run ```npm install```
-run ```node index.js -page number-```
-# The notebook has an example to run the script on a range.
+```git clone https://github.com/MohmadAyman/web-traffic-forecast```
+
+``` cd dl_trends ```
+
+```npm install```
+
+```node index.js -page number-```
+
+# Or run on a range in python
+
+```python
+import subprocess
+
+start = 0
+end = 27
+ks = [i for i in range(start, end)]
+
+for i in ks:
+    bashCommand = "node index.js " + str(i)
+    process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+```
