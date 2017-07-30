@@ -1,7 +1,7 @@
 # web-traffic-forecast
 This Repo holds the trends data as a csv file for each page,
 
-# 0-27 pages google search trends in the folder trends.
+## 0-27 pages done.
 
 # The script used to fetch the trends is in dl_trends,
 
@@ -13,7 +13,7 @@ This Repo holds the trends data as a csv file for each page,
 
 ```node index.js -page number-```
 
-# Or run on a range in python
+## Or run on a range in python
 
 ```python
 import subprocess
